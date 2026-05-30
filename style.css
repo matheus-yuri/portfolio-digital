@@ -1,0 +1,176 @@
+/* Reset da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1A1A1A;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2D2D2D;
+    text-align: center;
+    padding: 40px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-bottom: 15px;
+}
+
+/* Menu de navegação */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #F4C542;
+}
+
+/* Área principal */
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Espaçamento entre as seções */
+section {
+    margin-bottom: 50px;
+}
+
+/* Títulos das seções */
+h2 {
+    color: #F4C542;
+    margin-bottom: 15px;
+}
+
+/* Organização da foto e texto do Sobre Mim */
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Foto de perfil */
+.sobre-container img {
+    width: 220px;
+    border-radius: 15px;
+}
+
+/* Cartões utilizados em Formação e Habilidades */
+.card {
+    background-color: #2D2D2D;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Organização das habilidades */
+.habilidades-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Área dos projetos */
+.projeto-card {
+    background-color: #2D2D2D;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.projeto-card h3 {
+    margin-bottom: 15px;
+}
+
+/* Imagem do projeto */
+.projeto-card img {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+}
+
+.projeto-card p {
+    margin-bottom: 15px;
+}
+
+.projeto-card ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* Link do repositório */
+.projeto-card a {
+    color: #F4C542;
+    text-decoration: none;
+}
+
+.projeto-card a:hover {
+    text-decoration: underline;
+}
+
+/* Espaçamento dos contatos */
+#contato p {
+    margin-bottom: 10px;
+}
+
+/* Ícones do GitHub e LinkedIn */
+#contato i {
+    color: #F4C542;
+    margin-right: 8px;
+}
+
+/* Links do GitHub e LinkedIn */
+#contato a {
+    color: white;
+    text-decoration: none;
+}
+
+#contato a:hover {
+    color: #F4C542;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2D2D2D;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Ajustes para celular */
+@media (max-width: 768px) {
+
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-container img {
+        width: 180px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .habilidades-container {
+        flex-direction: column;
+    }
+}
